@@ -2,7 +2,7 @@ from flask import Flask,render_template
 
 import pandas as pd
 
-app = Flask(name)
+app = Flask(__name__)
 
 df = pd.read_csv("table1.csv")
 df.to_csv("data.csv", index=None)
@@ -12,5 +12,5 @@ def csvtohtml():
     data = pd.read_csv("table1.csv")
     return render_template('emissions.html',tables=[data.to_html()])
 
-if name == "main":
+if __name__ == "__main__":
     app.run(host="localhost",port=int(5000))
