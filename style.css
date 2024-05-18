@@ -1,0 +1,61 @@
+@font-face {font-family: IBMPlexMono; src: url('IBMPlexMono-Thin.ttf');}
+      .firstCarousel{
+        height:3px;
+        width:500px;
+      }
+      h3 {
+        font-family: IBMPlexMono;
+        color: #175873;
+      }
+      h1 {
+        font-family: IBMPlexMono
+      }
+      p {
+        font-family: IBMPlexMono;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      a:visited, a:link {
+        color: #545944;
+        font-family: IBMPlexMono;
+        background-color: transparent;
+        text-decoration: none;
+        font-size: 25px;
+      }
+      a:hover, a:active {
+        color: #545944;
+        font-family:IBMPlexMono;
+        background-color:transparent;
+        font-weight: bold;
+        font-size: 25px;
+      }
+
+	.navbar {
+        overflow: hidden;
+        background-color: #f5f5f5;
+      }
+
+      .navbar a {
+        float: left;
+        color: #87ACA3;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        font-family: IBMPlexMono;
+      }
+
+      .navbar a:hover {
+        color: #87ACA3;
+      }
+
+      .navbar a.active {
+        color:#87ACA3;
+      }
+
+	@media screen and (max-width: 500px){
+        .navbar a{
+          float: none;
+          display: block;
+        }
+      }
