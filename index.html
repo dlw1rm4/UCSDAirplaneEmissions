@@ -33,12 +33,49 @@
         font-weight: bold;
         font-size: 25px;
       }
+
+	.navbar {
+        overflow: hidden;
+        background-color: #f5f5f5;
+      }
+
+      .navbar a {
+        float: left;
+        color: #87ACA3;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        font-family: IBMPlexMono;
+      }
+
+      .navbar a:hover {
+        color: #87ACA3;
+      }
+
+      .navbar a.active {
+        color:#87ACA3;
+      }
+
+	@media screen and (max-width: 500px){
+        .navbar a{
+          float: none;
+          display: block;
+        }
+      }
     </style>
     <meta charset="utf-8">
     <title>page.kaitlyn (^ u ^)</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
-  <body bgcolor="#E9EDC9">
+  <body bgcolor="#f5f5f5">
+    <div class="navbar">
+      <a class="active" href="#">Home</a>
+      <a href="about.html">About</a>
+      <a href="emissions.html">Emissions</a>
+      <a href="flight.html">Calculate Your Flight</a>
+    </div>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <div id="firstCarousel" class="carousel slide">
     <div class="carousel-indicators">
