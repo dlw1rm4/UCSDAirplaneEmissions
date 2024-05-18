@@ -4,8 +4,6 @@ import pandas as pd
 
 app = Flask(__name__)
 
-df = pd.read_csv("table1.csv")
-df.to_csv("data.csv", index=None)
 
 @app.route('/')
 def csvtohtml():
