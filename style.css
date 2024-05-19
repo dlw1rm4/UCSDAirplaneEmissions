@@ -1,9 +1,5 @@
 @font-face {font-family: IBMPlexMono; src: url('IBMPlexMono-Thin.ttf');}
-      .carousel-item, .carousel-itemActive {
-        max-height:500px;
-        max-width:100%;
-        
-      }
+      
       h3 {
         font-family: IBMPlexMono;
         color: #175873;
