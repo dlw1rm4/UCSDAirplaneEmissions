@@ -104,8 +104,8 @@
       </div>
     </div>
     <center>
-      <h1><font color="#0C1446">What You Can Do</h1>
-      <p style="color:#0C1446">Select your flight's point of departure and destination down below to measure your flight's carbon footprint!</p>
+      <h1><style="color=#0C1446;">What You Can Do</h1>
+      <p style="color:#0C1446;">Select your flight's point of departure and destination down below to measure your flight's carbon footprint!</p>
       <br>
       <br>
     <div class="dropdown1">
@@ -328,10 +328,21 @@
     <button onclick="getDistance()">Submit</button>
       <br>
       <br>
-    <p style="color:#0C1446">The Distance is: </p>
+    <p style="color:#0C1446;">The Distance is: </p>
     <p style="color:#0C1446;" id = "result"></p>
 
-<p style="color:#0C1446">Result</p>
+<p style="color:#0C1446;">Result</p>
+	<br>
+	<br>
+	<p>Pounds of Carbon Produced: </p>
+	<br>
+	<br>
+	<p style="color: #0C1446;" id="pounds"></p>
+	<script>
+		carbon = document.getElementById("result").value;
+		perflight = 53.3;
+		document.getElementById("pounds").innerHTML = carbon * perflight;
+	</script>
       <br>
     </center>
   </body>
