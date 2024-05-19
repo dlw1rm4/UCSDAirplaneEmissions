@@ -157,6 +157,5 @@ function getDistance(){
       lat2 = 32.7336006;
       break;
   }
- distance = 3958.8 * Math.asin(Math.sqrt((Math.sin((lat2-lat1)/2))**2 + Math.cos(lat1) * Math.cos(lat2) * (Math.sin((lon2-lon1)/2)) ** 2));
- document.getElementById("result").innerHTML = distance;
+ document.getElementById("result").innerHTML = 3958.8 * Math.asin(Math.sqrt((Math.sin((lat2-lat1)/2))**2 + Math.cos(lat1) * Math.cos(lat2) * (Math.sin((lon2-lon1)/2)) ** 2));
 }
