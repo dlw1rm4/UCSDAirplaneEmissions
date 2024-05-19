@@ -1,7 +1,7 @@
       @font-face {font-family: WildNature; src: url('WildNature.ttf');}
       h1 {
 	font-size: 50px;
-        font-family: WildNature
+        font-family: WildNature;
       }
       .carousel-image{
         img{
