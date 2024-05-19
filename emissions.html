@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Emissions</title>
     <style>
       @font-face {font-family: WildNature; src: url('WildNature.ttf');}
       h1 {
@@ -51,6 +52,24 @@
       .navbar a.active {
         color:#87ACA3;
       }
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      ul li {
+        display: inline-block;
+        position: relative;
+      }
+      ul li a {
+        display: block;
+        padding: 20px 25px;
+      }
+      ul li ul.dropdown li {
+        display: block;
+      }
 
 	@media screen and (max-width: 500px){
         .navbar a{
@@ -67,8 +86,8 @@
   </head>
   <body bgcolor="#87ACA3">
     <div class="navbar">
-        <a class="active" href="#">About</a>
-        <a href="emissions.html">Emissions</a>
+        <a href="index.html">Home</a>
+        <a class="active" href="#">Emissions</a>
         <a href="whatyoucando.html">Calculate Your Flight</a>
       </div>
     </div>
@@ -82,6 +101,10 @@
       <br>
       <br>
       <p>Although only 2.5% (ourworldindata.org) of the world's carbon emissions come from flying, making sure we minimize this number is essential in acting as an upstream solution to the rising greenhouse gas levels.</p>
+      <br>
+      <br>
+      <br>
+      <img src="Images/graph.jpg" alt="Emissions Graph">
     </center>
   </body>
 </html>

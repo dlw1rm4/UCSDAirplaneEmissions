@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Calculate Your Flight's Emissions</title>
+    <style>
+      @font-face {font-family: WildNature; src: url('WildNature.ttf');}
+      h1 {
+	font-size: 50px;
+        font-family: WildNature
+      }
+      p {
+        font-family: WildNature;
+        font-size: 25px;
+        font-weight: bold;
+        margin-right: 150px;
+        margin-left: 150px;
+	color: #f5f5f5;
+      }
+      a:visited, a:link {
+        color: #f5f5f5;
+        font-family: WildNature;
+        background-color: transparent;
+        text-decoration: none;
+        font-size: 25px;
+      }
+      a:hover, a:active {
+        color: #f5f5f5;
+        font-family:WildNature;
+        background-color:transparent;
+        font-weight: bold;
+        font-size: 25px;
+      }
+      .navbar {
+        overflow: hidden;
+        background-color: #f5f5f5;
+      }
+
+      .navbar a {
+        float: left;
+        color: #87ACA3;
+        text-align: center;
+        padding: 14px 150px;
+        text-decoration: none;
+        font-size: 17px;
+        font-family: WildNature;
+      }
+
+      .navbar a:hover {
+        color: #87ACA3;
+      }
+
+      .navbar a.active {
+        color:#87ACA3;
+      }
+
+      .dropdown1-content{
+	font-family: Tahoma, sans-serif
+      }
+	    
+      .dropdown2-content{
+	font-family: Tahoma, sans-serif
+      }
+
+      .dropdown1 {
+	font-family: Tahoma, sans-serif
+      }
+
+      .dropdown2 {
+	font-family: Tahoma, sans-serif
+      }
+	    
+      .dropdown1-content a:hover {
+        color:#87ACA3;
+	background-color: 87ACA3;
+      }
+
+      .dropdown2-content a:hover {
+        color:#87ACA3;
+	background-color: 87ACA3;
+      }
+
+	@media screen and (max-width: 500px){
+        .navbar a{
+          float: none;
+          display: block;
+        }
+      }
+    
+    @font-face {
+      font-family: WildNature;
+      src: url(WildNature.ttf);
+    }
+    </style>
+  </head>
+  <body bgcolor="#87ACA3">
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="emissions.html">Emissions</a>
+        <a class="active" href="#">Calculate Your Flight</a>
+      </div>
+    </div>
+    <center>
+      <h1><font color="#f5f5f5">What You Can Do</h1>
+      <p>Select your flight's point of departure and destination down below to measure your flight's carbon footprint!</p>
+      <br>
+      <br>
+    <div class="dropdown1">
+      <label for="begin-flight">Select Departing Location</label>
+	    <select name="begin-flight" id="begin-flight">
+		    <div class="dropdown1-contents">
+		    <option value="boston">Boston</option>
+		    <option value="sandiego">San Diego</option>
+		    <option value="newyork">New York City</option>
+		    <option value="losangeles">Los Angeles</option>
+		    <option value="atlanta">Atlanta</option>
+		    <option value="chicago">Chicago</option>
+		    <option value="denver">Denver</option>
+		    <option value="lasvegas">Las Vegas</option>
+		    <option value="orlando">Orlando</option>
+		    <option value="miami">Miami</option>
+		    <option value="charlotte">Charlotte</option>
+		    <option value="seattle">Seattle/Tacoma</option>
+		    <option value="phoenix">Phoenix</option>
+		    <option value="sanfrancisco">San Francisco</option>
+		    <option value="houston">Houston</option>
+		    <option value="minneapolis">Minneapolis/Saint Paul</option>
+		    <option value="detroit">Detroit</option>
+		    <option value="philadelphia">Philadelphia</option>
+		    <option value="saltlakecity">Salt Lake City</option>
+		    </div>
+	    </select>
+    </div>
+<br>
+<br>
+    <div class="dropdown2">
+      <label for="end-flight">Select Destination</label>
+	    <select name="end-flight" id="end-flight">
+		    <div class="dropdown2-contents">
+		    <option value="boston">Boston</option>
+		    <option value="sandiego">San Diego</option>
+		    <option value="newyork">New York City</option>
+		    <option value="losangeles">Los Angeles</option>
+		    <option value="atlanta">Atlanta</option>
+		    <option value="chicago">Chicago</option>
+		    <option value="denver">Denver</option>
+		    <option value="lasvegas">Las Vegas</option>
+		    <option value="orlando">Orlando</option>
+		    <option value="miami">Miami</option>
+		    <option value="charlotte">Charlotte</option>
+		    <option value="seattle">Seattle/Tacoma</option>
+		    <option value="phoenix">Phoenix</option>
+		    <option value="sanfrancisco">San Francisco</option>
+		    <option value="houston">Houston</option>
+		    <option value="minneapolis">Minneapolis/Saint Paul</option>
+		    <option value="detroit">Detroit</option>
+		    <option value="philadelphia">Philadelphia</option>
+		    <option value="saltlakecity">Salt Lake City</option>
+		    </div>
+	    </select>
+    </div>
+    <br>
+    <br>
+    <input type="button" onClick="getDistance()" value="Submit"/>
+      <br>
+      <br>
+    <p>The Distance is: </p>
+    <span id = "result"></span>
+      <br>
+    </center>
+  </body>
+</html>
