@@ -3,15 +3,26 @@
 	font-size: 50px;
         font-family: WildNature;
       }
+      #sources{
+        padding-left:5%;
+        a{
+        font-size:10px;
+        }
+      }
+
       h5 {
         font-family: WildNature;
       }
       #infoGroup{
         padding:5%;
         color:#0C1446;
+        text-align:center;
         p{
           font-size:30px;
-          font-weight:bold;
+          font-weight:normal;
+        }
+        h5{
+          font-size:40px;
         }
       }
       .carousel-image{
