@@ -3,6 +3,9 @@
 	font-size: 50px;
         font-family: WildNature;
       }
+      h5 {
+        font-family: WildNature;
+      }
       .carousel-image{
         img{
           object-fit:cover;
