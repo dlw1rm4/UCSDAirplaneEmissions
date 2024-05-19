@@ -1,4 +1,10 @@
 @font-face {font-family: IBMPlexMono; src: url('IBMPlexMono-Thin.ttf');}
+      .carousel-image{
+        img{
+          object-fit:cover;
+          object-position:80% 40%;
+        }
+      }
       .carousel-caption{
         position:absolute;
         top:50%;
