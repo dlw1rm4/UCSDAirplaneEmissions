@@ -52,6 +52,11 @@
         color:#87ACA3;
       }
 
+      .dropdown-content a:hover {
+        color:#87ACA3;
+	background-color: 87ACA3;
+      }
+
 	@media screen and (max-width: 500px){
         .navbar a{
           float: none;
@@ -74,8 +79,35 @@
     </div>
     <center>
       <h1><font color="#f5f5f5">What You Can Do</h1>
+      <p>Select your flight's point of departure and destination down below to measure your flight's carbon footprint!</p>
       <br>
       <br>
+    <div class="dropdown">
+      <label for="begin-flight">Select Departing Location</label>
+	    <select name="begin-flight" id="begin-flight">
+		    <div class="dropdown-contents">
+		    <option value="boston">Boston</option>
+		    <option value="sandiego">San Diego</option>
+		    <option value="newyork">New York City</option>
+		    <option value="losangeles">Los Angeles</option>
+		    <option value="atlanta">Atlanta</option>
+		    <option value="chicago">Chicago</option>
+		    <option value="denver">Denver</option>
+		    <option value="lasvegas">Las Vegas</option>
+		    <option value="orlando">Orlando</option>
+		    <option value="miami">Miami</option>
+		    <option value="charlotte">Charlotte</option>
+		    <option value="seattle">Seattle/Tacoma</option>
+		    <option value="phoenix">Phoenix</option>
+		    <option value="sanfrancisco">San Francisco</option>
+		    <option value="houston">Houston</option>
+		    <option value="minneapolis">Minneapolis/Saint Paul</option>
+		    <option value="detroit">Detroit</option>
+		    <option value="philadelphia">Philadelphia</option>
+		    <option value="saltlakecity">Salt Lake City</option>
+		    </div>
+	    </select>
+    </div>
       <br>
       <br>
       <br>
